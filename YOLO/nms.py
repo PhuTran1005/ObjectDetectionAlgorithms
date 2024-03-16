@@ -20,7 +20,7 @@ def non_max_suppression(
     Returns:
         list: bboxes after performing NMS given a specific IoU threshold
     """
-    assert type(boxes) == list
+    assert type(bboxes) == list
 
     # remove bboxes which have the prob < prob_threshold
     bboxes = [box for box in bboxes if box[1] > prob_threshold]
