@@ -1,7 +1,11 @@
 import torch
 
 
-def intersection_over_union(boxes_preds, boxes_labels, box_format='midpoint'):
+def intersection_over_union(
+    boxes_preds,
+    boxes_labels,
+    box_format='midpoint'
+):
     """Calculate intersection over union
 
     Args:
